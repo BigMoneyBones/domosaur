@@ -3,7 +3,7 @@
 //1.
 function spanReSize() {
 
-    let messWithMe = document.querySelector('.mess-with-me'); //Changes the "span" with the class mess-with-me to a font size of 40px at the first iteration of the class.
+    let messWithMe = document.querySelector('span.mess-with-me'); //Changes the "span" with the class mess-with-me to a font size of 40px at the first iteration of the class.
     messWithMe.style.fontSize = "40px"; 
 
 }
@@ -13,7 +13,7 @@ spanReSize();
 //2.
 function changeParagraphColor() {
 
-    let newParagraph = document.querySelector('p.mess-with-me');
+    let newParagraph = document.querySelector('p.mess-with-me'); // for each of these, the function is not necessary. can just set the variable and make the change i.e line 16 & 17.
     newParagraph.style.backgroundColor = 'green';
 
 }   
@@ -25,7 +25,8 @@ function hideImage() {
 
     let hiddenImage = document.querySelector('#hide-me');
     hiddenImage.style.visibility = 'hidden';
-
+    hiddenImage.style.float = "right";
+    
 }
 
 hideImage();
